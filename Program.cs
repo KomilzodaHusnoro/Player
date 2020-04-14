@@ -6,7 +6,13 @@ namespace interface234
     {
         static void Main(string[] args)
         {
-
+            Player Fayzullo = new Player();
+            Fayzullo.Play();
+            Fayzullo.Pause();
+            Fayzullo.Record();
+            Fayzullo.Stop();
+            Fayzullo.Stop2();
+            
         }
     }
     class Player : IPlayable, IRecodable

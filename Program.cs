@@ -6,15 +6,10 @@ namespace interface234
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
     class Player : IPlayable, IRecodable
-    {
-        
-
-    }
-    interface IPlayable
     {
         public void Play()
         {
@@ -28,21 +23,27 @@ namespace interface234
         {
             System.Console.WriteLine("Playing has been stopped");
         }
-
-    }
-    interface IRecodable
-    {
         public void Record()
         {
             System.Console.WriteLine("It is recording");
         }
-        public void Pause ()
-        {
-            System.Console.WriteLine("Recoding has been paused");
-        }
-        public void Stop ()
+        public void Stop2 ()
         {
             System.Console.WriteLine("Recording has been stopped");
         }
+
+    }
+    interface IPlayable
+    {
+        public void Play();
+        public void Pause ();
+        public void Stop ();
+
+    }
+    interface IRecodable
+    {
+        void Record();
+        void Pause ();
+        void Stop2 ();
     }
 }
